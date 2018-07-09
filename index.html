@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta property="og:type" content="website">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://zhongxb.top/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:locale" content="zh-CN">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="/plugin/bganimation/bg.css">
+  
+
+</head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <div class="outer">
+        <div class="widget-wrap mobile-header">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="https://avatars0.githubusercontent.com/u/20333903?v=3&amp;s=460">
+    <h2 class="author">钟祥兵</h2>
+    <h3 class="description"></h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>2</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>0</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>0</strong><br>标签</div></a>
+    </div>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+        <section id="main">
+  
+    <article id="post-py面向对象" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/09/py面向对象/" class="article-date">
+  <time class="post-time" datetime="2018-07-09T07:07:11.975Z" itemprop="datePublished">
+    <span class="post-month">7月</span><br/>
+    <span class="post-day">09</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/09/py面向对象/">Python</a>
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="面向对象"><a href="#面向对象" class="headerlink" title="面向对象"></a>面向对象</h1><ul>
+<li>对象是什么 –&gt;对象是一个模型<ul>
+<li>IT行业中 这就是一个对象<ul>
+<li>C/C++ ,Python,PHP,JAVA 细节</li>
+</ul>
+</li>
+<li>楼房：平房，四合院，公寓</li>
+<li>Class班级，学生–&gt;小明，小芳</li>
+</ul>
+</li>
+<li>为什么这些可以称作一个模型？<ul>
+<li>有特征，有共同点</li>
+<li>把共同点组合起来就可以抽象总结出一个模型</li>
+<li>那么这个模型就可以称作为一个对象</li>
+</ul>
+</li>
+<li><p>==class用来定义一个类(一个共同点的模型)==</p>
+<ul>
+<li>属性<ul>
+<li>函数：方法，人们喜欢把类中的函数叫方法</li>
+<li>变量： 字符串，列表，元组，字典集合…</li>
+</ul>
+</li>
+<li>一个属性的集合</li>
+<li>实例：在内存里通过模型实例化创建数据<ul>
+<li>实例是一个容器一样，包含了所有类里的属性，实际上存在于内存中的</li>
+</ul>
+</li>
+<li>实例化：通过类+括号的方式<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Class A:</span><br><span class="line">    <span class="keyword">pass</span></span><br><span class="line">a=A()</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>面型对象的语法中我们可以通过实例化后的变量去获取相对应的属性(xxxx.xxxx)</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; mylist = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>,<span class="number">4</span>,<span class="number">5</span>]</span><br><span class="line">&gt;&gt;&gt; mylist.remove(<span class="number">1</span>)</span><br><span class="line">&gt;&gt;&gt; mylist</span><br><span class="line">[<span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>==Python中处处接对象==</p>
+<h2 id="self指针的意义、"><a href="#self指针的意义、" class="headerlink" title="self指针的意义、"></a>self指针的意义、</h2></li>
+<li>self是一个将我们函数声明为单独为一个实例工作的参数</li>
+<li>每增加一个self的函数或者变量都只是单独为自己的实例来工作<ul>
+<li>s1.func() #相当于调用了函数，只不过func(s1)这样调用都史使用了同一个函数</li>
+<li>s2.func()</li>
+<li>当实例调用时,当前实例都会覆盖self(实参传入进去)</li>
+<li>self用来指向当前工作实例<ul>
+<li>self是约定俗称的命名，你也可以叫别的，但是一般都叫self<h3 id="init"><a href="#init" class="headerlink" title="init"></a><strong>init</strong></h3><figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">__init__函数为没一个实例进行数据的初始化工作</span><br><span class="line">    数据初始化函数</span><br><span class="line">    就是为了给实例创建属于自己的变量</span><br><span class="line">__init__函数在实例化过程中自动调用，不需要你手动来调用</span><br><span class="line">__init__函数不允许有返回值，一旦有返回值就报错了</span><br><span class="line">    TypeError: __init__() should <span class="keyword">return</span> None, not <span class="string">'int'</span></span><br><span class="line">	类型错误： 该函数必须返回一个None，而不是int</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="面向对象属性"><a href="#面向对象属性" class="headerlink" title="面向对象属性"></a>面向对象属性</h3><ul>
+<li><p>属性</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#面向对象属性探究</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span>:</span></span><br><span class="line">    place = <span class="string">'classrom'</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name)</span>:</span></span><br><span class="line">        self.name = name</span><br><span class="line">s1 = Student(<span class="string">'小明'</span>)</span><br><span class="line">s2 = Student(<span class="string">'小李'</span>)</span><br><span class="line">print(s1.name)</span><br><span class="line">print(s2.name) <span class="comment">#实例调用属性</span></span><br><span class="line">print(s1.place) <span class="comment">#通过实例调用类变量</span></span><br><span class="line">print(Student.place) <span class="comment">#通过类调用类变量</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>==变量==</p>
+<ul>
+<li>实例的变量：<strong>只能被实例所访问(私有的)</strong><ul>
+<li>实例的变量可以被实例所使用</li>
+<li>s1.name 实例点的方式获取到属于实例的私有变量<ul>
+<li>属于实例的self.xxx的方式无法通过类去访问，因为这些属性需要实例化才能被访问。</li>
+<li>self.xxx这些变量都是实例私有的</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>类的变量：能被实例和类同时访问(共享的)<ul>
+<li>==但是如果实例修改了或者重新赋值了这个变量将升级成实例私有的。==</li>
+<li>==如果这个变量即使没有提前出现过，被实例重新修改了或者赋值，那么也会成为实例独有的。==</li>
+</ul>
+</li>
+<li><strong>内部是私有的，外部是公用的(共享的)</strong></li>
+<li>类和实例均支持在创建后，存活期间添加新的属性。<ul>
+<li>实例添加的时候，如果你职位一个单独实例添加，那么其他的实例不会拥有。</li>
+<li>类添加的时候，都会拥有。<h3 id="方法-函数"><a href="#方法-函数" class="headerlink" title="方法(函数)"></a>方法(函数)</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>实例的方法只能被实例所调用，而且默认实例方法第一个位置上的参数，==必须传递调用实例！==</p>
+<ul>
+<li>def func(self)…</li>
+<li>xx.func() 来调用一个实例函数，那么实例一定会作为第一个参数传递进来。</li>
+<li>函数中的self也可以让我们方便的直接获取到属于实例的私有变量。</li>
+<li>实例函数中也可以访问其他实例属性：因为self来指向当前实例的其他属性，self.other<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Car</span>:</span></span><br><span class="line">    tax = <span class="number">1.5</span> <span class="comment">#大家共享税的标准</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self,name,driver)</span>:</span></span><br><span class="line">        self.name = name <span class="comment">#车的名字</span></span><br><span class="line">        self.driver = driver <span class="comment">#所有者</span></span><br><span class="line">        self.gas = <span class="number">0</span> <span class="comment">#车的油量</span></span><br><span class="line"></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">run</span><span class="params">(self)</span>:</span> <span class="comment"># 车子会跑</span></span><br><span class="line">        <span class="keyword">if</span> self.gas &lt;= <span class="number">0</span>:</span><br><span class="line">            print(<span class="string">'没油不跑'</span>)</span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            print(<span class="string">'跑一下！'</span>)</span><br><span class="line">            self.gas = self.gas - <span class="number">10</span> <span class="comment">#跑一次少10升</span></span><br><span class="line">            print(<span class="string">'当前油量:'</span>,self.gas)</span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">add_oil</span><span class="params">(self,oil_num)</span>:</span> <span class="comment">#加油</span></span><br><span class="line">        self.gas += oil_num <span class="comment">#加到油</span></span><br><span class="line">        print(<span class="string">'加完油了:'</span>,self.gas)</span><br><span class="line"></span><br><span class="line">c = Car(<span class="string">'Bomb Bee'</span>,<span class="string">'小蓝'</span>)</span><br><span class="line">c.add_oil(<span class="number">100</span>) <span class="comment">#加100升</span></span><br><span class="line">c.run()</span><br><span class="line"><span class="comment">#Car.run() #XXX 错误的！这里就报错了 类不可以直接使用实例的函数</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>类的方法</p>
+<ul>
+<li>类的普通函数 权限完全封闭</li>
+<li>只能被类所使用，实例访问不了这种函数</li>
+<li><p>不能访问类的变量及实例变量</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#类的方法探究</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span>:</span></span><br><span class="line">    palce = <span class="string">'classroom'</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.name = <span class="string">'小芳'</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(cls)</span>:</span></span><br><span class="line">        print(<span class="string">'haha'</span>)</span><br><span class="line">        print(cls*cls)</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'哈哈'</span>  <span class="comment">#类的方法可以有返回值</span></span><br><span class="line">        <span class="comment">#print(place) 类的普通方法将无法 通过实例或者变量所访问类的变量</span></span><br><span class="line">s1 = Student()</span><br><span class="line"><span class="comment">#s1.func()  类的普通方法无法访问类</span></span><br><span class="line">Student.func(<span class="number">2</span>) <span class="comment">#类的方法，只能被类调用</span></span><br><span class="line">print(Student.func(<span class="number">3</span>))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>类的高级函数 权限展开了类的变量访问权限</p>
+<ul>
+<li>实例和类均可以调用</li>
+<li><strong>可以访问属于类的变量</strong></li>
+<li>依旧不可以访问属于实例的属性</li>
+<li>你有了cls形参之后,也就可以互相指向其他类的中高级函数，也就可以调用了<ul>
+<li>可以在另一个类中高级函数调用其它类          的高级函数<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#类的方法探究</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Student</span>:</span></span><br><span class="line">    palce = <span class="string">'classroom'</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.name = <span class="string">'小芳'</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(cls)</span>:</span></span><br><span class="line">        print(<span class="string">'haha'</span>)</span><br><span class="line">        print(cls*cls)</span><br><span class="line">        <span class="keyword">return</span> <span class="string">'哈哈'</span>  <span class="comment">#类的方法可以有返回值</span></span><br><span class="line">        <span class="comment">#print(place) 类的普通方法将无法 通过实例或者变量所访问类的变量</span></span><br><span class="line">        print(<span class="string">'-----------------'</span>)</span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">func1</span><span class="params">(cls)</span>:</span> <span class="comment">#cls表示当前类，必须要有的第一个参数</span></span><br><span class="line">        print(<span class="string">'我要打印了:'</span>)</span><br><span class="line">        print(<span class="string">'打印类的变量'</span>,cls.palce) <span class="comment">#打印类的变量</span></span><br><span class="line"><span class="meta">    @classmethod</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">func2</span><span class="params">(cls)</span>:</span> <span class="comment">#cls表示当前类</span></span><br><span class="line">        cls.func1()  <span class="comment">#调用另一个高级函数</span></span><br><span class="line">s1 = Student()</span><br><span class="line"><span class="comment">#s1.func()  类的普通方法无法访问类</span></span><br><span class="line"><span class="comment">#Student.func(2) #类的方法，只能被类调用</span></span><br><span class="line"><span class="comment">#print(Student.func(3))</span></span><br><span class="line">Student.func1() <span class="comment"># 通过类去访问</span></span><br><span class="line">Student.func2()<span class="comment">#</span></span><br><span class="line"><span class="comment">#s1.func1() #通过实例去访问类的高级函数</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>在这里，必须为类的高级函数第一个参数约定俗称为cls形参,该形参用来接收使用的类</p>
+<ul>
+<li><strong>类的静态方法</strong>:与普通函数相比，<strong>开放了实例访问函数的权限</strong>(访问类，实例的变量依旧是关闭的)<ul>
+<li>首先无法访问属于类的变量，没有指向当前使用类的指针</li>
+<li>实例和类均可调用</li>
+<li>不可访问属于实例的属性<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#类的方法探究</span></span><br><span class="line">  <span class="class"><span class="keyword">class</span> <span class="title">Student</span>:</span></span><br><span class="line">      palce = <span class="string">'classroom'</span></span><br><span class="line">      <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">          self.name = <span class="string">'小芳'</span></span><br><span class="line">      <span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(cls)</span>:</span></span><br><span class="line">          print(<span class="string">'haha'</span>)</span><br><span class="line">          print(cls*cls)</span><br><span class="line">          <span class="keyword">return</span> <span class="string">'哈哈'</span>  <span class="comment">#类的方法可以有返回值</span></span><br><span class="line">          <span class="comment">#print(place) 类的普通方法将无法 通过实例或者变量所访问类的变量</span></span><br><span class="line">          print(<span class="string">'-----------------'</span>)</span><br><span class="line"><span class="meta">      @classmethod</span></span><br><span class="line">      <span class="function"><span class="keyword">def</span> <span class="title">func1</span><span class="params">(cls)</span>:</span> <span class="comment">#cls表示当前类，必须要有的第一个参数</span></span><br><span class="line">          print(<span class="string">'我要打印了:'</span>)</span><br><span class="line">          print(<span class="string">'打印类的变量'</span>,cls.palce) <span class="comment">#打印类的变量</span></span><br><span class="line"><span class="meta">      @classmethod</span></span><br><span class="line">      <span class="function"><span class="keyword">def</span> <span class="title">func2</span><span class="params">(cls)</span>:</span> <span class="comment">#cls表示当前类</span></span><br><span class="line">          cls.func1()  <span class="comment">#调用另一个高级函数</span></span><br><span class="line">          cls.func3() <span class="comment">#高级函数可以调用静态函数和普通函数</span></span><br><span class="line">          cls.func(<span class="number">2</span>) <span class="comment">#普通函数</span></span><br><span class="line"><span class="meta">      @staticmethod</span></span><br><span class="line">      <span class="function"><span class="keyword">def</span> <span class="title">func3</span><span class="params">()</span>:</span></span><br><span class="line">          print(<span class="string">'打印func3'</span>) <span class="comment"># 和类的变量无关的操作</span></span><br><span class="line">  s1 = Student()</span><br><span class="line">  <span class="comment">#s1.func()  类的普通方法无法访问类</span></span><br><span class="line">  <span class="comment">#Student.func(2) #类的方法，只能被类调用</span></span><br><span class="line">  <span class="comment">#print(Student.func(3))</span></span><br><span class="line">  <span class="comment">#Student.func1()  # 通过类去访问</span></span><br><span class="line">  <span class="comment">#Student.func2()  #</span></span><br><span class="line">  <span class="comment">#s1.func1()  #通过实例去访问</span></span><br><span class="line">  <span class="comment">#类的静态方法</span></span><br><span class="line">  Student.func3() <span class="comment"># 类去访问类的静态函数</span></span><br><span class="line">  s1.func3() <span class="comment">#实例去访问类的静态函数</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>实例之间可以通过静态方法@staticmethod以及高级类方法@classmethod可以进行数据通信</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th></th>
+<th style="text-align:center">实例的函数(self)</th>
+<th style="text-align:center">类的普通函数</th>
+<th style="text-align:center">类的高级函数(cls)</th>
+<th style="text-align:center">类的静态函数</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>能被实例调用</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+</tr>
+<tr>
+<td>能被类调用</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+</tr>
+<tr>
+<td>访问实例变量</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">×</td>
+</tr>
+<tr>
+<td>访问类变量</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">×</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">×</td>
+</tr>
+</tbody>
+</table>
+<pre><code>* 实例是可以访问类的变量的，但是千万不要修改，修改了就变成当前实例私有的了。
+</code></pre><hr>
+<h2 id="继承"><a href="#继承" class="headerlink" title="继承"></a>继承</h2><ul>
+<li><p>继承：父类和子类，当子类继承了父类，那么这个子类就会拥有所有父类中的类容</p>
+<ul>
+<li>继承之后，当你的子类没有重写父类的init数据初始化函数，那么还会继续默认使用父类的。</li>
+<li>子类可以共享父类所有的，并且还可以添加新的</li>
+<li>父类不能共享子类拥有的。</li>
+<li>super():找到当前的父类<ul>
+<li>super().<strong>init</strong>()</li>
+</ul>
+</li>
+<li><p>在子类所使用父类属性的时候，一定要确定，在子类中是否保留了下来，而不是因为覆盖重写丢弃了。</p>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#添加功能的话，可以先super().func() 调用父类的函数之后，再去添加功能代码</span></span><br><span class="line"><span class="comment">#修改功能只能重写。</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">father</span><span class="params">(object)</span>:</span></span><br><span class="line"><span class="string">"""docstring for father."""</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">    self.name = <span class="string">'xyt'</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(self)</span>:</span></span><br><span class="line">    print(<span class="string">'ok'</span>)</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">son</span><span class="params">(father)</span>:</span> <span class="comment">#继承父类</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span> <span class="comment">#重写init数据初始化函数</span></span><br><span class="line">    super().__init__() <span class="comment">#调用父类属性</span></span><br><span class="line">    self.age = <span class="number">18</span> <span class="comment">#添加属性</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(self)</span>:</span></span><br><span class="line">    <span class="comment">#super().func() #调用实例函数</span></span><br><span class="line">    print(<span class="string">'hah'</span>) <span class="comment">#添加功能</span></span><br><span class="line">A = son()</span><br><span class="line">print(A.name)</span><br><span class="line">A.func()</span><br><span class="line">print(A.age)</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="多继承"><a href="#多继承" class="headerlink" title="多继承"></a>多继承</h2><ul>
+<li><p>当一个子类，如果继承多个父类</p>
+<ul>
+<li>而且多个父类中有重名相同的属性,那么这个子类会选择在继承先写的(就近原则)<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#多继承</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">PE</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.object = <span class="string">'basketball'</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">Object</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'play basketball'</span>)</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Math</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span></span><br><span class="line">        self.timu = <span class="string">'几何运算'</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">Timu</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'求面积'</span>)</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Xiaoming</span><span class="params">(PE,Math)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__init__</span><span class="params">(self)</span>:</span>  <span class="comment">#覆盖重写init函数</span></span><br><span class="line">        super().__init__() <span class="comment">#找到父类</span></span><br><span class="line">        self.timu = <span class="string">'几何运算'</span>  <span class="comment">#自己添加的属性</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(self.object)  <span class="comment">#可以调用父类init函数，所以子类拥有init函数</span></span><br><span class="line"><span class="comment">#PE为父类</span></span><br><span class="line">A = Xiaoming()</span><br><span class="line">A.Object()</span><br><span class="line">print(A.timu)</span><br><span class="line">A.func()</span><br><span class="line">A.func()</span><br><span class="line"><span class="comment">#Math</span></span><br><span class="line"><span class="comment">#print(A.timu)</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<blockquote>
+<p>当你在多继承时一定要注意init函数中 如果有些变量没有被继承下来，</p>
+</blockquote>
+<ul>
+<li>其他父类中的init函数因为没有被继承下来，被最近的父类给抢占了</li>
+<li>其他父类中其他函数 可能使用到了一些没有被这个子类所继承下来的属性。</li>
+<li>首先，如果子类在访问自身没有的属性时，会去父类中找</li>
+<li>父类中有重复的，子类会选择最近的<br>*<strong>init</strong>函数由于普遍一个类都会有，所以现在只会继承下来一个init函数(离他最近的父类)</li>
+<li>多继承的顺序：就近原则<h2 id="多态"><a href="#多态" class="headerlink" title="多态"></a>多态</h2></li>
+<li>多态必须重写父类同名函数</li>
+<li>根据数据类型的不同，来执行不同的操作</li>
+<li>一件事物可以在不同的情况下具备不同的处理方式。例:电脑<ul>
+<li>用来玩游戏</li>
+<li>用来学习</li>
+<li>用来写python<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">play_computer</span>:</span></span><br><span class="line"><span class="comment">#    def __init__(self):</span></span><br><span class="line"><span class="comment">#        self.computer = 'LoL'</span></span><br><span class="line"><span class="comment">#        self.hero = 'JS'</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'duble kill'</span>)</span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">study_computer</span><span class="params">(play_computer)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">func</span><span class="params">(self)</span>:</span></span><br><span class="line">        print(<span class="string">'I love python!'</span>)</span><br><span class="line">A = play_computer() <span class="comment">#父类</span></span><br><span class="line">A.func()</span><br><span class="line">B = study_computer() <span class="comment">#子类</span></span><br><span class="line">B.func()</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th style="text-align:left"></th>
+<th style="text-align:center">play_computer(父类)</th>
+<th style="text-align:center">study_computer(子类)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">A(判断A是否属于对应类)</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">×</td>
+</tr>
+<tr>
+<td style="text-align:left">B(判断B是否属于对应类)</td>
+<td style="text-align:center">√</td>
+<td style="text-align:center">√</td>
+</tr>
+</tbody>
+</table>
+<h2 id="类中的其它内建函数"><a href="#类中的其它内建函数" class="headerlink" title="类中的其它内建函数"></a>类中的其它内建函数</h2>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">python的构造函数时 __new__函数,并不是__init__</span><br><span class="line">__new__(cls): 构造器 Python自动帮你维护</span><br><span class="line">用于控制实例的生产</span><br><span class="line">      1. 空间的初始化</span><br><span class="line">      2. 在实例化过程中自动执行</span><br><span class="line">      3. new函数的返回值就是创建出来的实例</span><br><span class="line">      4. 类级别的函数</span><br><span class="line">__init__(self): 数据初始化</span><br><span class="line">      1. 数据初始化</span><br><span class="line">      2. 自动化实例化过程中运行</span><br><span class="line">      3. 不允许返回除了None以外的任何对象</span><br><span class="line"># a=A() 实例化过程</span><br><span class="line">  1. a = A.__new__()  创建实例</span><br><span class="line">  2. a.__init__()  分配数据</span><br><span class="line"></span><br><span class="line">__del__(self): 析构器 python自动帮你维护</span><br><span class="line">用来在实例释放的时候自动调用。</span><br><span class="line">      # 手动del</span><br><span class="line">      # 程序运行结束</span><br><span class="line">  将实例所占有的内存及引用计数释放。</span><br><span class="line">del: 删除变量名，引用计数减1</span><br></pre></td></tr></table></figure>
+  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">class A(object):</span><br><span class="line">  def __new__(cls):</span><br><span class="line">      print(&apos;空间初始化...&apos;)</span><br><span class="line">      #python不需要你重写这个函数</span><br><span class="line">      #真正创建实例</span><br><span class="line">      return super(A,cls).__new__(cls)</span><br><span class="line">          #1.找到A的父类 super(A,cls)</span><br><span class="line">          #2.通过A的父类实例的对象 生产出A的实例 object.__new__(cls)</span><br><span class="line">          #3.自己没有配方 找到父类的配方使用</span><br><span class="line">  def __init__(self):</span><br><span class="line">      self.name = &apos;xyt&apos;</span><br><span class="line">      print(&apos;数据初始化...&apos;)</span><br><span class="line">  def __del__(self):</span><br><span class="line">      #也不需要自己去写，Python自动会在程序运行完释放</span><br><span class="line">      del self.name</span><br><span class="line">      print(&apos;析构器&apos;)</span><br><span class="line">a = A()</span><br><span class="line">print(a.name)</span><br></pre></td></tr></table></figure>
+<ul>
+<li><p><strong>call</strong>函数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">def __call__(self)</span><br><span class="line">      #重载()函数调用符号</span><br><span class="line">      #一旦在类中维护了__call__(self)</span><br><span class="line">      #那么代表这个类的实例可以做函数直接调用</span><br><span class="line">  例：</span><br><span class="line">  class A():</span><br><span class="line">  def __new__(cls):</span><br><span class="line">      print(&apos;空间初始化...&apos;)</span><br><span class="line">      #python不需要你重写这个函数</span><br><span class="line">      #真正创建实例</span><br><span class="line">      return super(A,cls).__new__(cls)</span><br><span class="line">          #1.找到A的父类 super(A,cls)</span><br><span class="line">          #2.通过A的父类实例的对象 生产出A的实例 object.__new__(cls)</span><br><span class="line">          #3.自己没有配方 找到父类的配方使用</span><br><span class="line">  def __init__(self):</span><br><span class="line">      self.name = &apos;xyt&apos;</span><br><span class="line">      print(&apos;数据初始化...&apos;)</span><br><span class="line">  def func(self):</span><br><span class="line">      print(&apos;hello world&apos;)</span><br><span class="line"></span><br><span class="line">  def __del__(self):</span><br><span class="line">      #也不需要自己去写，Python自动会在程序运行完释放</span><br><span class="line">      del self.name</span><br><span class="line">      print(&apos;析构器&apos;)</span><br><span class="line">  def __call__(self):      ###声明</span><br><span class="line">      print(&apos;call函数&apos;)</span><br><span class="line">      return self.func() ###声明</span><br><span class="line">  a = A()</span><br><span class="line">  a() #直接把实例a调用，调用__call__函数</span><br></pre></td></tr></table></figure>
+<ul>
+<li>==_slots_==<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">__slots__ 用来锁定实例的属性</span><br><span class="line">class A(object):</span><br><span class="line">def __init__(self,name,age,sex):</span><br><span class="line">    self.name = name</span><br><span class="line">    self.age = age</span><br><span class="line">    #self.sex = sex  # 只能是指定的属性，添加slots中没有的属性将会报错</span><br><span class="line">__slots__ = (&apos;name&apos;,&apos;age&apos;) #定义了指定的属性</span><br><span class="line">a = A(&apos;xyt&apos;,18,&apos;fmale&apos;)</span><br><span class="line">#__slots__可以被继承，但是无法在子类中生效</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>==@proporty==  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">   @proporty</span><br><span class="line">#可以把类中方法 直接作为实例属性来使用</span><br><span class="line">#当含有参数时，会报错</span><br><span class="line">	#TypeError: func() missing 1 required positional argument: &apos;a&apos;</span><br><span class="line">lass A(object):</span><br><span class="line">   def __init__(self,name,age):</span><br><span class="line">       self.name = name</span><br><span class="line">       self.age = age</span><br><span class="line">       #self.sex = sex  # 只能是指定的属性，添加slots中没有的属性将会报错</span><br><span class="line">   __slots__ = (&apos;name&apos;,&apos;age&apos;) #定义了指定的属性</span><br><span class="line">   @property  </span><br><span class="line">   def func(self):</span><br><span class="line">       print(self.name)</span><br><span class="line">   a = A(&apos;xyt&apos;,18)</span><br><span class="line">   #__slots__可以被继承，但是无法在子类中生效</span><br><span class="line">   a.func  #直接调用，无需加括号</span><br><span class="line">   @staticmethod</span><br><span class="line">#静态方法</span><br><span class="line">   @classmethod</span><br><span class="line">#类的高级方法</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h2 id="运算符重载"><a href="#运算符重载" class="headerlink" title="运算符重载"></a>运算符重载</h2><ul>
+<li>运算符<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">+ - * /</span><br><span class="line">#str list tuple:</span><br><span class="line">    __add__: +</span><br><span class="line">            *加法:拼接</span><br><span class="line">    __mul__: *</span><br><span class="line">            *重复输出</span><br><span class="line">int:</span><br><span class="line">    __add__: +</span><br><span class="line">    __sub__: -</span><br><span class="line">    __mul__: *</span><br><span class="line">    __truediv__: /</span><br><span class="line">    __mod__: %</span><br><span class="line">    __floordiv: //</span><br><span class="line">    __pw__: **</span><br><span class="line">    面向对象四要素：python--&gt;</span><br><span class="line">    构造器 __new__</span><br><span class="line">    析构器 __del__</span><br><span class="line">    运算符重载 __add__</span><br><span class="line">    赋值重载</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#双目运算符：</span></span><br><span class="line">    &gt; &lt; &gt;= &lt;= ==</span><br><span class="line"><span class="comment">#判断操作费：str</span></span><br><span class="line">    __eq__: ==</span><br><span class="line">    __ne__: !=</span><br><span class="line">    __gt__: &gt;</span><br><span class="line">    __ge__: &gt;=</span><br><span class="line">    __lt__: &lt;</span><br><span class="line">    __le__: &lt;=</span><br></pre></td></tr></table></figure>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#两个字符串比较大小,本应该是比较阿斯克码，重载实现对字符串长度的比较</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Mystr</span><span class="params">(str)</span>:</span></span><br><span class="line">    <span class="function"><span class="keyword">def</span> <span class="title">__gt__</span><span class="params">(self,other)</span>:</span></span><br><span class="line">        index = <span class="number">0</span></span><br><span class="line">        <span class="keyword">while</span> index &lt; len(self): <span class="comment">#循环终止条件</span></span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                self[index]</span><br><span class="line">            <span class="keyword">except</span> IndexError: <span class="comment"># 如果这部报错说了两者相等或者self小于other</span></span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line">            <span class="keyword">try</span>:</span><br><span class="line">                other[index]</span><br><span class="line">            <span class="keyword">except</span> IndexError:</span><br><span class="line">                 <span class="comment">#如果这部通过说明other小于self，因为上面没有报错正常通过了</span></span><br><span class="line">                <span class="keyword">return</span> <span class="keyword">True</span></span><br><span class="line">            index += <span class="number">1</span></span><br><span class="line">        <span class="keyword">else</span>:</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">False</span></span><br><span class="line">a = Mystr(<span class="string">'asd'</span>)</span><br><span class="line">b = Mystr(<span class="string">'assss'</span>)</span><br><span class="line">print(a&gt;b)</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#函数运算符</span><br><span class="line">len() --&gt; 求一个序列的长度</span><br><span class="line">str() --&gt; 把任何事物变成字符串 __str__</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">#操作符</span><br><span class="line">操作符：</span><br><span class="line">mylist = [1,2,3,4,5]</span><br><span class="line">mylist[index] : 通过索引访问对应的值</span><br><span class="line">mydict = &#123;1:&apos;a&apos;,2:&apos;b&apos;&#125;</span><br><span class="line">mydict[key]</span><br><span class="line">普通序列中：mylist[index]</span><br><span class="line">	__getitem__(self,index)</span><br><span class="line">字典中: mydict[key]</span><br><span class="line">	__getitem__(self,key)</span><br></pre></td></tr></table></figure>
+<hr>
+<h2 id="迭代器"><a href="#迭代器" class="headerlink" title="迭代器"></a>迭代器</h2><ul>
+<li><p>迭代器:抽象的数据</p>
+<ul>
+<li>迭代器中包含两个内置函数<ul>
+<li>__next__</li>
+<li>__iter__<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Python3:range() 可迭代的对象:当不去真正使用数据的时候，数据不</span><br><span class="line">会创建出来,节约内存</span><br><span class="line">Python2:xrange() 会列出所以的数据,占用内存</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>可迭代的对象(iterable)</p>
+<ul>
+<li>1：都可以通过for循环访问</li>
+<li>2：前一个数据可以找到后一个数据</li>
+<li>3: 数据维护了之间彼此维持了访问顺序</li>
+<li>4：一般由链表构成,或者数组</li>
+<li>5：dict、set无序。无法用线性表示其中顺序，树形结构本质是有顺序的</li>
+<li>只要有__iter__函数,那么都可以通过iter去初始化成一个迭代器。</li>
+</ul>
+</li>
+<li>访问迭代器(一定是一个抽象的数据)<ul>
+<li>无法通过工厂函数实际化</li>
+<li>可以通过for循环访问,每一次循环提取一个数据</li>
+<li>next函数可以在每一次调用时返回一个迭代器里的数据</li>
+<li>无法重新生产已经生产出来的数据</li>
+<li>挤牙膏，访问完了就无法访问了</li>
+<li>延时生产数据,啥时候用，啥时候用next或者for循环访问、<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">   可迭代的对象:</span><br><span class="line"></span><br><span class="line">list,str,tuple,set,dict,file,sql,range</span><br><span class="line"></span><br><span class="line">只需要含有__iter__函数的，都可以称作一个可迭代的对象</span><br><span class="line"></span><br><span class="line">   迭代器:</span><br><span class="line"></span><br><span class="line">更抽象的数据，其中必须包含__next__函数，也</span><br><span class="line">必须包含__iter__</span><br><span class="line"></span><br><span class="line">   生成器:</span><br><span class="line"></span><br><span class="line">高级的迭代器</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="无限迭代器"><a href="#无限迭代器" class="headerlink" title="无限迭代器"></a>无限迭代器</h3><blockquote>
+<p>无法被一次性实际化</p>
+<ul>
+<li>通过函数自动创建<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> itertools</span><br><span class="line">a = itertools.count()</span><br><span class="line">next(a)</span><br><span class="line"><span class="comment">#count(start=0,step=1),可以自己定义起点和步长</span></span><br><span class="line"><span class="comment">#list(a)--错误的 无法通过工厂函数</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>通过一个序列来访问<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">mylist = [<span class="number">1</span>,<span class="number">2</span>,<span class="number">3</span>]</span><br><span class="line">a = itertools.cycle(mylist)</span><br><span class="line">b= itertools.cycle(range(<span class="number">10</span>)</span><br><span class="line"><span class="comment"># 访问一个数列，成一个环形，无限访问</span></span><br><span class="line"><span class="comment">#itertools.cycle(iterable)一个可迭代的数据</span></span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<h3 id="有限迭代器"><a href="#有限迭代器" class="headerlink" title="有限迭代器"></a>有限迭代器</h3><ul>
+<li><p>iter内置函数直接升华具有<strong>iter</strong>内置函数的对象</p>
+<ul>
+<li>iter(list|str|set|tuple|dict|file|sql|range)<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&gt;&gt;&gt; a = &#123;1,2,3,4&#125;</span><br><span class="line">&gt;&gt;&gt; b = iter(a)</span><br><span class="line">&gt;&gt;&gt; next(b)</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; c = (1,2,4,5,6)</span><br><span class="line">&gt;&gt;&gt; d = iter(c)</span><br><span class="line">&gt;&gt;&gt; next(b)</span><br><span class="line">2</span><br><span class="line">&gt;&gt;&gt; next(d)</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; aa = &#123;1,2,3,4&#125;</span><br><span class="line">&gt;&gt;&gt; bb = iter(aa)</span><br><span class="line">&gt;&gt;&gt; aaa = &#123;1:2,2:3,3:4,4:5&#125;</span><br><span class="line">&gt;&gt;&gt; bbb = iter(aaa)</span><br><span class="line">&gt;&gt;&gt; next(bbb)</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; next(bbb)</span><br><span class="line">2</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+<li><p>模块函数来生产</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#from itertools import islice</span></span><br><span class="line"><span class="comment">#islce(iterable,stop)</span></span><br><span class="line"><span class="comment">#islice(iterable,start,stop,[step])</span></span><br><span class="line"><span class="keyword">from</span> itertools <span class="keyword">import</span> islice</span><br><span class="line">a = islice(<span class="string">'1234'</span>,<span class="number">1</span>,<span class="number">3</span>)</span><br><span class="line"><span class="keyword">for</span> var <span class="keyword">in</span> a:</span><br><span class="line">  print(var)</span><br></pre></td></tr></table></figure>
+<ul>
+<li>只要是一个可迭代对象，都可以通过iter变成迭代器，然后用next来访问</li>
+<li>for：一定访问的是一个可迭代的对象<ul>
+<li>__iter__:检查数据是否是一个可迭代的</li>
+<li>iter():将迭代对象升华为一个迭代器</li>
+<li>next():每一次for循环都是调用一次next</li>
+<li>for循坏的结束其实是捕捉到了StopIteration异常<h3 id="生成器"><a href="#生成器" class="headerlink" title="生成器"></a>生成器</h3></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>生成器也是迭代器,只不过是特殊的迭代器</li>
+<li>生成器创建出来的就是可以直接可以用的</li>
+<li><p>元组推导式</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">不需要手动维护iter和next函数</span><br><span class="line">&gt;&gt;&gt; gen = (var for var in range(10))</span><br><span class="line">&gt;&gt;&gt; gen</span><br><span class="line">&lt;generator object &lt;genexpr&gt; at 0x7f12b898a1a8&gt;</span><br><span class="line">&gt;&gt;&gt; next(gen)</span><br><span class="line">0</span><br><span class="line">&gt;&gt;&gt; next(gen)</span><br><span class="line">1</span><br><span class="line">&gt;&gt;&gt; next(gen)</span><br><span class="line">2</span><br><span class="line">&gt;&gt;&gt; next(gen)</span><br><span class="line">3</span><br><span class="line">&gt;&gt;&gt; next(gen)</span><br><span class="line">4</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>函数实现生成器</p>
+<ul>
+<li>yield语句可以在函数内部替换return语句实现生成器<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">yield</span><br><span class="line">    返回结果</span><br><span class="line">    暂停函数</span><br><span class="line">return</span><br><span class="line">    返回结果</span><br><span class="line">    终止函数</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhongxb.top/2018/07/09/py面向对象/" data-id="cjjec5dyr0003vhmjyw3fsbvn" class="article-share-link">分享</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
+    <article id="post-hello-world" class="wow slideInRight article article-type-post" itemscope itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2018/07/09/hello-world/" class="article-date">
+  <time class="post-time" datetime="2018-07-09T06:11:48.336Z" itemprop="datePublished">
+    <span class="post-month">7月</span><br/>
+    <span class="post-day">09</span>
+  </time>
+</a>
+   
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/07/09/hello-world/">Hello World</a>
+    </h1>
+  
+
+        <div>
+          
+          
+              
+
+          
+        </div>
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://zhongxb.top/2018/07/09/hello-world/" data-id="cjjec5dwv0000vhmjouffo5z3" class="article-share-link">分享</a>
+      
+      
+    </footer>
+  </div>
+  
+</article>
+
+
+
+
+  
+
+</section>
+        
+          <aside id="sidebar">
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <h1 class="blog-title">Hexo</h1>
+    <h2 class="blog-subtitle"></h2>
+    <ul class="blog-link">
+     
+          <a href="/" title="Home">
+            <li>主页</li>
+          </a>
+        
+          <a href="/archives" title="Archives">
+            <li>归档</li>
+          </a>
+        
+          <a href="/categories" title="Categories">
+            <li>分类</li>
+          </a>
+        
+          <a href="/tags" title="Tags">
+            <li>标签</li>
+          </a>
+        
+    </ul>
+  </div>
+</div>
+
+  
+    <div class="widget-wrap">
+  <h3 class="widget-title"></h3>
+  <div class="widget">
+    <img class="avatar" src="https://avatars0.githubusercontent.com/u/20333903?v=3&amp;s=460">
+    <h2 class="author">钟祥兵</h2>
+    <h3 class="description"></h3>
+    <div class="count-box">
+      <a href="/archives"><div><strong>2</strong><br>文章</div></a>
+      <a href="/categories"><div><strong>0</strong><br>分类</div></a>
+      <a href="/tags"><div><strong>0</strong><br>标签</div></a>
+    </div>
+
+
+
+    <div class="social-link">
+      
+        <a class="hvr-bounce-in" href="http://github.com/ShanaMaid" target="_blank" title="Github">
+          Github
+        </a>
+      
+    </div>
+
+    <div class="friend-link">
+      <h2>友情链接</h2>
+      
+        <a class="hvr-bounce-in" href="http://blog.shanamaid.top/" target="_blank" title="ShanaMaid">
+          ShanaMaid
+        </a>
+      
+    </div>
+  </div>
+</div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy;2017 - 2018 钟祥兵<br>
+      由<a href="http://hexo.io/" target="_blank">Hexo</a>强力驱动 | 
+      主题-<a href="https://github.com/ShanaMaid/hexo-theme-shana">Shana</a>
+      
+    </div>
+    
+  </div>
+</footer>
+    </div>
+    
+
+<script src="//apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="//apps.bdimg.com/libs/wow/0.1.6/wow.min.js"></script>
+<script>
+new WOW().init();
+</script>   
+
+
+  <link rel="stylesheet" href="/plugin/fancybox/jquery.fancybox.css">
+  <script src="/plugin/fancybox/jquery.fancybox.pack.js"></script>
+
+
+
+  <link rel="stylesheet" href="/plugin/galmenu/GalMenu.css">
+  <script src="/plugin/galmenu/GalMenu.js"></script>
+  <div class="GalMenu GalDropDown">
+      <div class="circle" id="gal">
+        <div class="ring">
+          
+            <a href="/" title="" class="menuItem">首页</a>
+          
+            <a href="/tags" title="" class="menuItem">标签</a>
+          
+            <a href="/categories" title="" class="menuItem">分类</a>
+          
+            <a href="/archives" title="" class="menuItem">归档</a>
+          
+            <a href="/xxxxxxxxx" title="" class="menuItem">xxx</a>
+          
+            <a href="/xxxxxxx" title="" class="menuItem">xxxx</a>
+          
+        </div>
+        
+          <audio id="audio" src="#"></audio>
+        
+      </div> 
+</div>
+<div id="overlay" style="opacity: 1; cursor: pointer;"></div>
+  <script type="text/javascript">var items = document.querySelectorAll('.menuItem');
+    for (var i = 0,
+    l = items.length; i < l; i++) {
+      items[i].style.left = (50 - 35 * Math.cos( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%";
+      items[i].style.top = (50 + 35 * Math.sin( - 0.5 * Math.PI - 2 * (1 / l) * i * Math.PI)).toFixed(4) + "%"
+    }</script>
+<script type="text/javascript">
+  $(document).ready(function() {
+    $('body').GalMenu({
+      'menu': 'GalDropDown'
+    })
+  });
+</script>
+
+  <section class="hidden-xs"> 
+  <ul class="cb-slideshow"> 
+    <li><span>苟利</span></li> 
+    <li><span>国家</span></li> 
+    <li><span>生死以</span></li> 
+    <li><span>岂能</span></li> 
+    <li><span>祸福</span></li> 
+    <li><span>趋避之</span></li> 
+  </ul>
+</section>
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
